@@ -1,4 +1,9 @@
 #!/bin/sh
 
-echo "fuzzy-wuzzy"
-exit 0
+# this pack is valid for apps with a test.py in the root
+if [ -f $1/test.py ]; then
+  echo "FuzzyWuzzy"
+  exit 0
+else
+  exit 1
+fi
