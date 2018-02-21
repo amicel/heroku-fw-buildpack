@@ -1,5 +1,4 @@
 #!/bin/sh
 
-# this pack is valid for all apps
-echo "fuzzy-wuzzy will be installed!"
+echo "fuzzy-wuzzy"
 exit 0
