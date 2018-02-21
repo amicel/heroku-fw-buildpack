@@ -6,7 +6,4 @@ cd fw
 git clone git://github.com/seatgeek/fuzzywuzzy.git fuzzywuzzy
 cd fuzzywuzzy
 python setup.py install --prefix=/app/fw
-
-#!/usr/bin/python
-from fuzzywuzzy import fuzz
-echo fuzz.ratio("this is a test", "this is a test!")
+python -W ignore test.py
