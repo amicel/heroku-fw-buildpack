@@ -6,4 +6,6 @@ cd fw
 git clone git://github.com/seatgeek/fuzzywuzzy.git fuzzywuzzy
 cd fuzzywuzzy
 python setup.py install --prefix=/app/fw
-python -W ignore $1/app/test.py
+
+cp /app/test.py .
+python -W ignore test.py
